@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --fc-nav: #C4C4CC;
+  --fc-navspan: #FFFFFF;
+  --fc-heading: #E1E1E6;
+  --fc-button: #FFFFFF;
+  --fc-texting: #E1E1E6;
+
+
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-cover {
+  background-image: url('./images/mountains-universe-1\ 1.png');
+  
+}
+
+.the-universe-cover {
+  background-image: url('./images/mountains-universe-2.png');
+}
+
+.exploration-cover {
+  background-image: url('./images/mountains-universe-3.png');
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4.3rem;
+
+  margin-left: 7.2rem;
+  margin-top: 4rem;  
+  margin-bottom: 4rem;  
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5.4rem;
+  
+}
+
+nav a {
+  text-decoration: none !important;
+  font-size: 1.8rem;
+  color: var(--fc-nav);
+}
+
+.span {
+  color: var(--fc-navspan);
+  font-weight: 700;
+}
+
+main {
+  text-align: center;
+  margin-top: 17.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  color: var(--fc-heading);
+  animation: revelation 2000ms forwards;
+}
+
+button {
+  background-color: transparent;
+  color: var(--fc-button);
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.2rem 3.2rem;
+  width: fit-content;
+  cursor: pointer;
+
+  border-radius: 5px;
+  border: 2px solid #FFF;
+
+  animation: revelation 2000ms forwards;
+}
+
+p {
+  color: var(--fc-texting);
+  font-size: 1.8rem;
+  line-height: 160%;
+  width: 64.8rem;
+}
+
+.the-universe-page, .exploration-page {
+  margin-left: 10.2rem;
+  margin-top: 6.3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  animation: revelation 2000ms forwards;
+}
+
+@keyframes revelation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
